@@ -11,24 +11,47 @@
             display: flex;
             justify-content: center;
             position: relative;
-            font-family:Arial, Helvetica, sans-serif;
+            font-family: Arial, Helvetica, sans-serif;
             gap: 50px;
         }
 
-        .desc {
-            background-color: #df47b9;
-            .box-text1 {
-                font-size: 15px;
-            }
-            .box-text2 {
-                font-size: 25px;
-            }
-            .box-text3{
-                font-size: 20px;
-            }
-            .box-text4 {
-                font-size: 10px;
-            }
+        .producto {
+            position: relative;
+        }
+
+        .productodesc {
+            background-color: #cc3c84;
+            position: absolute;
+            top: 0px;
+            left: 15px;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .box {
+            display: flex;
+        }
+
+        .box-text1 {
+            text-align: left;
+            font-size: 15px;
+            color: white;
+        }
+
+        .box-text2 {
+            display: flex;
+            font-size: 40px;
+            color: white;
+        }
+
+        .box-text3 {
+            font-size: 20px;
+            color: white;
+        }
+
+        .box-text4 {
+            font-size: 10px;
+            color: white;
         }
 
         
@@ -39,21 +62,81 @@
     <main>
         <div class="container">
 
-            <div class="box1">
-                <div class="desc" id="color">
+            <div class="producto">
+                <div class="productodesc" id="color">
                     <div class="box-text1"><strong>HASTA</strong></div>
-                    <div class="box-text2"><strong>30</strong></div>
-                    <div class="box-text3"><strong>%</strong></div>
-                    <div class="box-text4"><strong>OFF</strong></div>
+
+                    <div class="box">
+                        <div class="partederecha"> <!--flex-->
+                            <div class="box-text2"><strong>30</strong></div>
+                        </div>
+    
+                        <div class="partederecha1">
+                            <div class="box-text3"><strong>%</strong></div>
+                            <div class="box-text4"><strong>OFF</strong></div>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="img">
-                    <img src="./Assets/img/imagen1.png" width="400px" height="200px">
+                <div class="productoimg">
+                    <img src="./Assets/img/imagen1.png" alt="" width="400px" height="200px">
                 </div>
 
-                <div class="text">
+                <div class="productotext">
                     <strong>Notebooks, tablets, smartwatches, y mucho más en <br>
                         hasta 6 sin interés.</strong>
+                </div>
+            </div>
+
+            <div class="producto">
+                <div class="productodesc" id="color">
+                    <div class="box-text1"><strong>HASTA</strong></div>
+        
+                    <div class="box">
+                        <div class="partederecha">
+                            <div class="box-text2"><strong>25</strong></div>
+                        </div>
+        
+                        <div class="partederecha1">
+                            <div class="box-text3"><strong>%</strong></div>
+                            <div class="box-text4"><strong>OFF</strong></div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="productoimg">
+                    <img src="./Assets/img/imagen2.png" alt="" width="400px" height="200px">
+                </div>
+        
+                <div class="productotext">
+                    <strong>Aprovechá hasta 6 sin interés en artículos de <br>
+                        deportes y fitness.</strong>
+                </div>
+            </div>
+        
+            <div class="producto">
+                <div class="productodesc" id="color">
+                    <div class="box-text1"><strong>HASTA</strong></div>
+        
+                    <div class="box">
+                        <div class="partederecha">
+                            <div class="box-text2"><strong>45</strong></div>
+                        </div>
+        
+                        <div class="partederecha1">
+                            <div class="box-text3"><strong>%</strong></div>
+                            <div class="box-text4"><strong>OFF</strong></div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="productoimg">
+                    <img src="./Assets/img/imagen3.png" width="400px" height="200px">
+                </div>
+        
+                <div class="productotext">
+                    <strong>Heladeras, cocinas, lavado y pequeños <br>
+                        electrodomésticos en hasta 6 sin intrerés.</strong>
                 </div>
             </div>
 
