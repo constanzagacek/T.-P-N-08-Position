@@ -16,14 +16,21 @@
             display: flex;
             justify-content: center;
             gap: 10px;
+            border-bottom: 1px solid lightgray;
         }
 
         ul {
             list-style: none;
         }
 
-        .vacio { <!--formulario-->
-
+        label{
+            display: flex;
+        }
+    
+        button {
+            background-color: blueviolet;
+            color: white;
+            border-color: blueviolet;
         }
     </style>
 </head>
@@ -74,7 +81,17 @@
         </div>
 
         <div class="box">
-            <div class="vacio"></div>
+            <div class="vacio">
+                <form action="">
+                    <div>
+                        <label for="email">Recibí ofertas y promociones</label>
+                        <input type="email" name="Ingresa tu email">
+                    </div>
+                    <div>
+                        <button>SUSCRIBIRME</button>
+                    </div>
+                </form>
+            </div> <!--formulario-->
             <div>
                 <ul>
                     <li><span class="text"><strong>Comprar en Frávega.com</strong></span></li>
